@@ -35,6 +35,14 @@ ol {
   list-style: none;
 }
 
+nav {
+  margin-left: 93px;
+}
+
+address {
+  font-style: normal;
+}
+
 .link {
   text-decoration: none;
 }
@@ -103,7 +111,6 @@ ol {
 
 .menu-nav {
   display: flex;
-  margin-left: 93px;
   padding: 0;
 }
 
@@ -175,6 +182,7 @@ ol {
   letter-spacing: 0.06em;
   border-radius: 4px;
   padding: 10px 32px;
+  border: none;
 }
 /* ===========================FEATURES=========================== */
 
@@ -341,10 +349,6 @@ ol {
 
 /* =======================================PORTFOLIO========================================== */
 
-.main {
-  background: #e5e5e5;
-}
-
 .filters .main-button {
   background: #f5f4fa;
   color: var(--black-heading-text);
@@ -355,6 +359,7 @@ ol {
   line-height: 1.62;
   border-radius: 4px;
   padding: 6px 22px;
+  border: none;
 }
 
 .filters .main-button:hover {
@@ -367,11 +372,10 @@ ol {
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 34px;
-  margin-left: -30px;
 }
 
-.filters .item {
-  margin-left: 30px;
+.filters .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* ===========================================PROJECT================================ */
@@ -397,10 +401,6 @@ ol {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 20px;
-  margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 .project .paragraph {
@@ -408,9 +408,8 @@ ol {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+}
+
+.project-box {
+  padding: 24px 20px;
 }
